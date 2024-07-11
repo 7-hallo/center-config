@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: center-config
+  cloud:
+    config:
+      server:
+        git:
+          uri: classpath:/config
+
+server:
+  port: 8000

@@ -4,10 +4,10 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class CenterconfigApplication {
+public class CenterConfigApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(CenterconfigApplication.class, args);
+		SpringApplication.run(CenterConfigApplication.class, args);
 	}
 
 }
