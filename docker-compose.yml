@@ -1,0 +1,17 @@
+services:
+  common:
+    image: sevenhallo-center-config:latest
+    container_name: center-config
+    command: start-dev
+    ports:
+      - "8001:8001"
+    networks:
+      - sevenhallo
+
+volumes:
+  product-service:
+
+networks:
+  sevenhallo:
+    driver: bridge
+    external: true
