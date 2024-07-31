@@ -1,5 +1,5 @@
 services:
-  common:
+  center-config:
     image: sevenhallo-center-config:latest
     container_name: center-config
     command: start-dev
@@ -9,7 +9,7 @@ services:
       - sevenhallo
 
 volumes:
-  product-service:
+  center-config:
 
 networks:
   sevenhallo:
