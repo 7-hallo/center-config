@@ -1,11 +1,24 @@
 server:
-  port: 8001
+  port: 8888
 
 spring:
   application:
     name: center-config
+
+# Use file config local
+  profiles:
+    active: native
   cloud:
     config:
       server:
-        git:
-          uri: classpath:/config
+        native:
+          search-locations: classpath:/config
+
+# Use file config git
+#  cloud:
+#    config:
+#      server:
+#        git:
+#          uri: https://github.com/7-hallo/config-repo
+##          username: your-username - nếu cần
+##          password: your-password - nếu cần
